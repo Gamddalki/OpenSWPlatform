@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Icecream vending machine example</title>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      /* Initial balance should be 0 so all button fonts are red */
+      #icecream1,
+      #icecream2,
+      #icecream3 {
+        color: red;
+      }
+
+      #selection {
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Icecream Vending Machine</h2>
+    <h4>아이스크림의 구매를 위해 아래 버튼을 눌러 금액을 충전해주세요</h4>
+
+    <!-- To insert coints, click the buttons below-->
+    <input type="button" id="btn1" value="1000원" />
+    <input type="button" id="btn2" value="500원" />
+    <input type="button" id="btn3" value="100원" />
+    <h4>원하는 아이스크림의 버튼을 선택하여 주세요</h4>
+
+    <!-- To purchase ice creams, click the buttons below -->
+    <input type="button" id="icecream1" value="돼지바(700원)" />
+    <input type="button" id="icecream2" value="월드콘(1000원)" />
+    <input type="button" id="icecream3" value="누크바(500원)" />
+
+    <br />
+    <br />
+
+    <!-- Choice shows selection inputted by users -->
+    Choice : <span id="selection"></span>
+
+    <br />
+    <br />
+
+    <!-- Balance shows current balance of user-->
+    Balance : <span id="current"></span>
+
+    <script
+      type="text/Javascript"
+      src="1004_practice2.js"
+      charset="UTF-8"
+    ></script>
+  </body>
+</html>
