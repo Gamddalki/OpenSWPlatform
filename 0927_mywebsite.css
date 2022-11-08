@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+    --dark-red: #ff3333;
+    --red: #ff5555;
+    --dark-gray: #1f1f1f;
+    --gray: #aaa;
+    --light-gray: #f1f1f1;
+}
+
+body {
+    padding: 10px 350px;
+    background: var(--light-gray);
+}
+
+header, nav, div, footer {
+    border-radius: 15px;
+}
+
+/* Header/Blog Title */
+header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    color: var(--dark-red);
+}
+
+h2, h3 {
+    color: var(--red);
+}
+
+h5, p{
+    color: var(--dark-gray);
+}
+
+/* Style the top navigation bar */
+nav {
+    overflow: hidden;
+    background-color: var(--red);
+}
+
+/* Style the topnav links */
+li a {
+    float: left;
+    display: block;
+    color: ghostwhite;
+    text-align: center;
+    padding: 0px 16px 16px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+li a:hover {
+  color: var(--dark-gray);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+section {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+aside {
+  float: right;
+  width: 25%;
+  background-color: var(--light-gray);
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: var(--light-gray);
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Profile image */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+
+
+/* Footer */
+footer {
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  margin-top: 15px;
+  clear : both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  section, aside {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
